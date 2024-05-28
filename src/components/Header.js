@@ -1,32 +1,21 @@
-// src/Header.js
+// src/components/Header.js
 import React from 'react';
-import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
 const HeaderContainer = styled.header`
-  background-color: #282c34;
-  height: 60px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 1rem 2rem;
+  background: #282c34;
   color: white;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    height: auto;
-  }
-`;
-
-const Title = styled.h1`
-  font-size: 1.5rem;
 `;
 
 const Nav = styled.nav`
   a {
     color: white;
+    margin: 0 1rem;
     text-decoration: none;
-    margin: 0 10px;
 
     &:hover {
       text-decoration: underline;
@@ -36,7 +25,7 @@ const Nav = styled.nav`
 
 const Header = () => (
   <HeaderContainer>
-    <Title>My Site</Title>
+    <h1>Robert Gomes</h1>
     <Nav>
       <Link to="/">Home</Link>
       <Link to="/about">About</Link>

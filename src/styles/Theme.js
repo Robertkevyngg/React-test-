@@ -1,4 +1,4 @@
-// src/Theme.js
+// src/styles/Theme.js
 export const lightTheme = {
   body: '#FFF',
   text: '#363537',

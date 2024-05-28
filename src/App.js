@@ -2,11 +2,14 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
-import { lightTheme, darkTheme } from './Theme';
-import { GlobalStyles } from './global';
-import Header from './Header';
-import About from './About';
-import Home from './Home'; // Certifique-se de que este componente existe
+import { lightTheme, darkTheme } from './styles/Theme';
+import { GlobalStyles } from './styles/GlobalStyles';
+import Header from './components/Header';
+import Home from './components/Home';
+import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -22,10 +25,12 @@ function App() {
         <Header />
         <button onClick={themeToggler}>Toggle theme</button>
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          {/* Adicione outras rotas aqui */}
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </Router>
     </ThemeProvider>
   );
