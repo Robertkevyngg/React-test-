@@ -7,19 +7,19 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.text};
     font-family: Tahoma, Helvetica, Arial, Roboto, sans-serif;
     transition: all 0.50s linear;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
   }
 
-  header {
-    background: ${({ theme }) => theme.background};
-    color: ${({ theme }) => theme.text};
+  #root {
+    height: 100%;
+    width: 100%;
   }
 
   button {
-    background: ${({ theme }) => theme.toggleBorder};
-    border: 2px solid ${({ theme }) => theme.toggleBorder};
-    color: ${({ theme }) => theme.text};
-    cursor: pointer;
-    padding: 10px;
-    margin: 20px;
+    font-family: inherit;
   }
 `;

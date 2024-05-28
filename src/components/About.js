@@ -9,8 +9,8 @@ const AboutContainer = styled.div`
 
 const About = () => (
   <AboutContainer>
-    <h2>About Me</h2>
-    <p>Information about me.</p>
+    <h2>Cursando Ciencia da computaçao no instituto maua de tecnologia, Atualmente utilizando as linguagens, Java, Python, JavaScript, Css, Html, React </h2>
+    <p></p>
   </AboutContainer>
 );
 
